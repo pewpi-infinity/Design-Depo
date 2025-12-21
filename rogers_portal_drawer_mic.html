@@ -80,7 +80,6 @@
 
     @media (min-width:980px){.drawer{inset:0 auto 0 -100%}}
   </style>
-  <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
   <header>
@@ -301,10 +300,7 @@
     function setupAuth(){
       // Expose optional chat endpoint for live LLM
       if(authCfg?.chat_endpoint){window.CHAT_ENDPOINT=authCfg.chat_endpoint}
-      if(!authCfg||!window.google||!google.accounts||!google.accounts.id){signin.style.display='none';authState.textContent='Auth: not configured';avatar.textContent='–';return}
       signin.style.display='block';
-      google.accounts.id.initialize({client_id:authCfg.google_client_id,callback:handleCredential});
-      google.accounts.id.renderButton(signin,{theme:'filled_blue',size:'medium',shape:'pill',text:'signin_with'});
       authState.textContent='Signed out'; avatar.textContent='?'
     }
     function parseJwt(token){const base64Url=token.split('.')[1];const base64=base64Url.replace(/-/g,'+').replace(/_/g,'/');const jsonPayload=decodeURIComponent(atob(base64).split('').map(c=>'%' + ('00'+c.charCodeAt(0).toString(16)).slice(-2)).join(''));return JSON.parse(jsonPayload)}
