@@ -1,0 +1,5 @@
+{
+  "layout_family": ["commerce-grid","search-led","metric-panels"],
+  "strategy": "reference-blended",
+  "mutation_allowed": false
+}
