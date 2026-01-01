@@ -5,10 +5,10 @@
 
 :root[data-theme="mathematics"] {
   /* Font Families */
-  --font-primary: 'Fira Math', 'Computer Modern', 'Latin Modern Math', serif;
-  --font-secondary: 'Source Serif Pro', 'Georgia', serif;
-  --font-technical: 'JetBrains Mono', 'Fira Code', monospace;
-  --font-handwriting: 'Caveat', 'Patrick Hand', cursive;
+  --font-primary: 'Fira Math', 'Computer Modern', 'Latin Modern Math', 'Times New Roman', serif;
+  --font-secondary: 'Source Serif Pro', 'Georgia', 'Times New Roman', serif;
+  --font-technical: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+  --font-handwriting: 'Caveat', 'Patrick Hand', 'Comic Sans MS', cursive;
   
   /* Font Sizes */
   --font-size-xs: 12px;

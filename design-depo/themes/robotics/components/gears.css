@@ -45,7 +45,9 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Generate 12 teeth */
+/* Gear Teeth - 12 evenly spaced teeth at 30-degree intervals
+ * Note: For dynamic generation, consider using a CSS preprocessor (SASS/LESS)
+ * or JavaScript to generate these rules programmatically for different tooth counts */
 .gear-tooth:nth-child(1) { transform: translate(-50%, -50%) rotate(0deg) translateY(-40px); }
 .gear-tooth:nth-child(2) { transform: translate(-50%, -50%) rotate(30deg) translateY(-40px); }
 .gear-tooth:nth-child(3) { transform: translate(-50%, -50%) rotate(60deg) translateY(-40px); }

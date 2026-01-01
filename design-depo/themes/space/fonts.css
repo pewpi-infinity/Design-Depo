@@ -5,11 +5,11 @@
 
 :root[data-theme="space"] {
   /* Font Families */
-  --font-primary: 'Exo 2', 'Orbitron', sans-serif;
-  --font-secondary: 'Space Mono', monospace;
-  --font-technical: 'Share Tech Mono', monospace;
-  --font-display: 'Audiowide', cursive;
-  --font-mission: 'Rajdhani', sans-serif;
+  --font-primary: 'Exo 2', 'Orbitron', 'Arial', sans-serif;
+  --font-secondary: 'Space Mono', 'Courier New', monospace;
+  --font-technical: 'Share Tech Mono', 'Courier New', monospace;
+  --font-display: 'Audiowide', 'Impact', cursive;
+  --font-mission: 'Rajdhani', 'Arial', sans-serif;
   
   /* Font Sizes */
   --font-size-xs: 10px;

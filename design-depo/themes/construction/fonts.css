@@ -5,10 +5,10 @@
 
 :root[data-theme="construction"] {
   /* Font Families */
-  --font-primary: 'Architect\'s Daughter', 'Permanent Marker', cursive;
-  --font-secondary: 'Roboto Condensed', sans-serif;
+  --font-primary: "Architect's Daughter", 'Permanent Marker', 'Comic Sans MS', cursive;
+  --font-secondary: 'Roboto Condensed', 'Arial Narrow', 'Arial', sans-serif;
   --font-technical: 'Courier New', monospace;
-  --font-blueprint: 'Inconsolata', monospace;
+  --font-blueprint: 'Inconsolata', 'Courier New', monospace;
   
   /* Font Sizes */
   --font-size-xs: 10px;

@@ -36,6 +36,27 @@
     0 0 20px var(--led-blue);
 }
 
+.electronics-led.blue.on {
+  background: var(--led-blue);
+  box-shadow: 
+    0 0 10px var(--led-blue),
+    0 0 20px var(--led-blue);
+}
+
+.electronics-led.yellow.on {
+  background: var(--led-yellow);
+  box-shadow: 
+    0 0 10px var(--led-yellow),
+    0 0 20px var(--led-yellow);
+}
+
+.electronics-led.white.on {
+  background: var(--led-white);
+  box-shadow: 
+    0 0 10px var(--led-white),
+    0 0 20px var(--led-white);
+}
+
 /* Blinking LED Animation */
 .electronics-led.blink {
   animation: led-blink 1s infinite;
@@ -76,6 +97,11 @@
 }
 
 /* Color bands for resistor */
+.electronics-resistor {
+  --band-spacing: 10px;
+  --band-start: 12px;
+}
+
 .electronics-resistor .band {
   position: absolute;
   top: 0;
@@ -84,9 +110,9 @@
   opacity: 0.8;
 }
 
-.electronics-resistor .band-1 { left: 12px; background: var(--resistor-band-1); }
-.electronics-resistor .band-2 { left: 22px; background: var(--resistor-band-2); }
-.electronics-resistor .band-3 { left: 32px; background: var(--resistor-band-3); }
+.electronics-resistor .band-1 { left: var(--band-start); background: var(--resistor-band-1); }
+.electronics-resistor .band-2 { left: calc(var(--band-start) + var(--band-spacing)); background: var(--resistor-band-2); }
+.electronics-resistor .band-3 { left: calc(var(--band-start) + var(--band-spacing) * 2); background: var(--resistor-band-3); }
 
 /* Capacitor Component */
 .electronics-capacitor {
