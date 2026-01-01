@@ -1,0 +1,53 @@
+/**
+ * 🚀 Space Theme - Color System
+ * Cosmic and astronomical aesthetics
+ */
+
+:root[data-theme="space"] {
+  /* Space Colors */
+  --space-black: #0B0B0F;
+  --space-navy: #151B54;
+  --deep-space: #0D0221;
+  --nebula-purple: #4A148C;
+  --nebula-pink: #C2185B;
+  
+  /* Star Colors */
+  --star-white: #FFFFFF;
+  --star-blue: #B3D9FF;
+  --star-yellow: #FFFACD;
+  --star-red: #FFB3B3;
+  
+  /* Planet Colors */
+  --earth-blue: #4169E1;
+  --mars-red: #CD5C5C;
+  --jupiter-orange: #FFA500;
+  --saturn-gold: #DAA520;
+  --neptune-blue: #4682B4;
+  
+  /* Cosmic Effects */
+  --aurora-green: #00FF7F;
+  --aurora-blue: #00CED1;
+  --cosmic-purple: #8A2BE2;
+  --cosmic-cyan: #00FFFF;
+  --solar-yellow: #FFD700;
+  
+  /* Rocket/Tech Colors */
+  --rocket-silver: #C0C0C0;
+  --rocket-red: #DC143C;
+  --rocket-white: #F5F5F5;
+  --tech-blue: #00BFFF;
+  --engine-orange: #FF4500;
+  
+  /* Text & UI */
+  --text-primary: #FFFFFF;
+  --text-secondary: #B3D9FF;
+  --text-accent: #00FFFF;
+  --bg-primary: var(--space-black);
+  --bg-secondary: var(--space-navy);
+  
+  /* Mission States */
+  --mission-active: #00FF00;
+  --mission-standby: #FFD700;
+  --mission-alert: #FF0000;
+  --mission-complete: #00CED1;
+}

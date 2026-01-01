@@ -1,0 +1,52 @@
+/**
+ * 🚗 Automotive Theme - Color System
+ * Racing and vehicle design aesthetics
+ */
+
+:root[data-theme="automotive"] {
+  /* Car Body Colors */
+  --car-red: #C8102E;
+  --car-blue: #003DA5;
+  --car-yellow: #FFD700;
+  --car-black: #0A0A0A;
+  --car-white: #F8F8F8;
+  --car-silver: #C0C0C0;
+  
+  /* Racing Colors */
+  --racing-checkered: #000000;
+  --racing-flag-white: #FFFFFF;
+  --racing-stripe: #FFD700;
+  --finish-line: #FF6600;
+  
+  /* Dashboard Colors */
+  --dash-orange: #FF8C00;
+  --dash-red: #FF0000;
+  --dash-green: #00FF00;
+  --dash-blue: #00BFFF;
+  --speedometer-bg: #1A1A1A;
+  
+  /* Road Colors */
+  --asphalt-black: #36454F;
+  --road-white: #FFFFFF;
+  --road-yellow: #FFEB3B;
+  --tire-mark: rgba(0, 0, 0, 0.3);
+  
+  /* Light Colors */
+  --headlight-white: #FFFFCC;
+  --brake-light-red: #FF0000;
+  --turn-signal-amber: #FFA500;
+  --running-light: #87CEEB;
+  
+  /* Text & UI */
+  --text-primary: #FFFFFF;
+  --text-secondary: #CCCCCC;
+  --text-accent: #FF6600;
+  --bg-primary: #1A1A1A;
+  --bg-secondary: #2C2C2C;
+  
+  /* Performance States */
+  --rpm-low: #00FF00;
+  --rpm-mid: #FFD700;
+  --rpm-high: #FF0000;
+  --speed-boost: #00FFFF;
+}

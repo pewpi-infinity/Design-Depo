@@ -1,0 +1,57 @@
+/**
+ * 🌿 Nature Theme - Color System
+ * Organic and botanical aesthetics
+ */
+
+:root[data-theme="nature"] {
+  /* Plant Colors */
+  --leaf-green: #2D5016;
+  --grass-green: #7CB342;
+  --lime-green: #9CCC65;
+  --moss-green: #4A7C59;
+  --sage-green: #8A9A5B;
+  
+  /* Flower Colors */
+  --flower-pink: #F48FB1;
+  --flower-purple: #BA68C8;
+  --flower-yellow: #FFF176;
+  --flower-red: #EF5350;
+  --flower-white: #FAFAFA;
+  
+  /* Earth Tones */
+  --soil-brown: #5D4037;
+  --bark-brown: #795548;
+  --sand-beige: #D7CCC8;
+  --stone-gray: #9E9E9E;
+  
+  /* Sky & Water */
+  --sky-blue: #81D4FA;
+  --water-blue: #4FC3F7;
+  --ocean-deep: #0277BD;
+  --cloud-white: #ECEFF1;
+  
+  /* Mushroom Colors */
+  --mushroom-red: #D32F2F;
+  --mushroom-cap: #8D6E63;
+  --mushroom-stem: #F5F5F5;
+  --mushroom-spots: #FFFFFF;
+  
+  /* Seasonal Colors */
+  --spring-pastel: #C5E1A5;
+  --summer-bright: #FFD54F;
+  --autumn-orange: #FF9800;
+  --winter-frost: #B3E5FC;
+  
+  /* Text & UI */
+  --text-primary: #33691E;
+  --text-secondary: #558B2F;
+  --text-accent: #8BC34A;
+  --bg-primary: #F1F8E9;
+  --bg-secondary: #DCEDC8;
+  
+  /* Growth States */
+  --seed-brown: #6D4C41;
+  --sprout-green: #AED581;
+  --bloom-color: #FF4081;
+  --mature-green: #388E3C;
+}

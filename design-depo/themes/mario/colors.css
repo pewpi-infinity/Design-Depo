@@ -1,0 +1,50 @@
+/**
+ * 🍄 Mario Theme - Color System
+ * Pixel-perfect colors from the Mushroom Kingdom
+ */
+
+:root[data-theme="mario"] {
+  /* Primary Colors - Mario's signature palette */
+  --mario-red: #E60012;
+  --mario-blue: #0066CC;
+  --mario-yellow: #FFD700;
+  --mario-green: #00A550;
+  
+  /* Mushroom Colors */
+  --mushroom-red: #FF3333;
+  --mushroom-white: #FFFFFF;
+  --mushroom-green: #00CC44;
+  
+  /* Block Colors */
+  --question-block: #FFD700;
+  --question-block-shadow: #CC9900;
+  --brick-block: #CC6600;
+  --brick-block-shadow: #994400;
+  
+  /* Coin & Power-up Colors */
+  --coin-gold: #FFCC00;
+  --coin-shine: #FFFF66;
+  --star-power: #FFD700;
+  --fire-flower: #FF6600;
+  
+  /* Pipe Colors */
+  --pipe-green: #00AA44;
+  --pipe-dark: #008833;
+  --pipe-highlight: #00DD55;
+  
+  /* Background Colors */
+  --sky-blue: #5C94FC;
+  --ground-brown: #8B4513;
+  --castle-gray: #666666;
+  
+  /* Text Colors */
+  --text-primary: #FFFFFF;
+  --text-shadow: #000000;
+  --text-accent: #FFD700;
+  
+  /* UI States */
+  --ui-success: #00CC44;
+  --ui-danger: #FF0000;
+  --ui-warning: #FFD700;
+  --ui-info: #0066CC;
+}

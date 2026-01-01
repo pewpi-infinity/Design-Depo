@@ -1,0 +1,113 @@
+/**
+ * 🔌 Electronics Theme - Oscilloscope Display
+ * Signal visualization and waveform display
+ */
+
+.electronics-oscilloscope {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  background: var(--scope-bg);
+  border: 4px solid var(--text-secondary);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: inset 0 0 20px rgba(0, 255, 0, 0.1);
+}
+
+/* Grid Lines */
+.electronics-oscilloscope-grid {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    repeating-linear-gradient(0deg, transparent, transparent 49px, var(--scope-grid) 49px, var(--scope-grid) 50px),
+    repeating-linear-gradient(90deg, transparent, transparent 49px, var(--scope-grid) 49px, var(--scope-grid) 50px);
+}
+
+/* Center Cross-hair */
+.electronics-oscilloscope-grid::before,
+.electronics-oscilloscope-grid::after {
+  content: '';
+  position: absolute;
+  background: var(--scope-grid);
+}
+
+.electronics-oscilloscope-grid::before {
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transform: translateY(-50%);
+}
+
+.electronics-oscilloscope-grid::after {
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  transform: translateX(-50%);
+}
+
+/* Signal Trace */
+.electronics-oscilloscope-trace {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  stroke: var(--scope-trace-1);
+  stroke-width: 2;
+  fill: none;
+  filter: drop-shadow(0 0 5px currentColor);
+  animation: trace-sweep 2s linear infinite;
+}
+
+.electronics-oscilloscope-trace.channel-2 {
+  stroke: var(--scope-trace-2);
+}
+
+.electronics-oscilloscope-trace.channel-3 {
+  stroke: var(--scope-trace-3);
+}
+
+/* Sweep Animation */
+@keyframes trace-sweep {
+  0% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
+
+/* Control Panel */
+.electronics-oscilloscope-controls {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  display: flex;
+  gap: 8px;
+}
+
+.electronics-oscilloscope-control {
+  width: 30px;
+  height: 30px;
+  background: var(--pcb-black);
+  border: 2px solid var(--text-secondary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-technical);
+  font-size: 10px;
+  color: var(--text-primary);
+}
+
+/* Measurement Display */
+.electronics-oscilloscope-measurement {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-family: var(--font-display);
+  font-size: 12px;
+  color: var(--text-primary);
+  text-shadow: 0 0 5px currentColor;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 4px 8px;
+  border-radius: 4px;
+}

@@ -1,0 +1,60 @@
+/**
+ * 🎮 Gaming Theme - Color System
+ * Video game UI and controller aesthetics
+ */
+
+:root[data-theme="gaming"] {
+  /* Console Colors */
+  --console-black: #1A1A1A;
+  --console-gray: #3C3C3C;
+  --console-white: #F0F0F0;
+  
+  /* Button Colors (PlayStation style) */
+  --button-cross: #5E9BFF;
+  --button-circle: #FF5757;
+  --button-square: #FF9BFF;
+  --button-triangle: #9BFF9B;
+  
+  /* Controller Colors */
+  --controller-body: #2C3E50;
+  --joystick-black: #1C1C1C;
+  --trigger-gray: #95A5A6;
+  --dpad-dark: #34495E;
+  
+  /* UI Colors */
+  --hud-green: #00FF41;
+  --hud-blue: #00D9FF;
+  --hud-yellow: #FFD700;
+  --hud-red: #FF3838;
+  
+  /* Power Colors */
+  --power-on: #00FF00;
+  --power-off: #333333;
+  --power-standby: #FFA500;
+  
+  /* Health/Mana Colors */
+  --health-full: #2ECC71;
+  --health-mid: #F39C12;
+  --health-low: #E74C3C;
+  --mana-blue: #3498DB;
+  --stamina-yellow: #F1C40F;
+  
+  /* XP/Level Colors */
+  --xp-purple: #9B59B6;
+  --level-gold: #FFD700;
+  --achievement-bronze: #CD7F32;
+  --achievement-silver: #C0C0C0;
+  --achievement-gold: #FFD700;
+  
+  /* Text & UI */
+  --text-primary: #ECF0F1;
+  --text-secondary: #BDC3C7;
+  --text-accent: #3498DB;
+  --bg-primary: #1A1A1A;
+  --bg-secondary: #2C3E50;
+  
+  /* Game States */
+  --game-pause: #F39C12;
+  --game-active: #2ECC71;
+  --game-over: #E74C3C;
+}

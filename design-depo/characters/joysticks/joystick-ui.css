@@ -1,0 +1,248 @@
+/**
+ * 🕹️ Joystick UI Elements Library
+ * Game controller and input UI components
+ */
+
+.joystick {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+/* Joystick Base */
+.joystick-base {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #2C3E50 0%, #1A1A1A 100%);
+  border-radius: 50%;
+  border: 4px solid #34495E;
+  box-shadow: 
+    inset 0 4px 8px rgba(0, 0, 0, 0.5),
+    0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Joystick Stick */
+.joystick-stick {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle, #E74C3C 0%, #C0392B 100%);
+  border-radius: 50%;
+  border: 3px solid #95A5A6;
+  box-shadow: 
+    inset 0 2px 4px rgba(255, 255, 255, 0.3),
+    0 4px 8px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: transform 0.1s ease-out;
+}
+
+.joystick-stick::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4), transparent);
+  border-radius: 50%;
+}
+
+/* Directional States */
+.joystick-stick.up {
+  transform: translate(-50%, -65%);
+}
+
+.joystick-stick.down {
+  transform: translate(-50%, -35%);
+}
+
+.joystick-stick.left {
+  transform: translate(-65%, -50%);
+}
+
+.joystick-stick.right {
+  transform: translate(-35%, -50%);
+}
+
+/* Diagonal Positions */
+.joystick-stick.up-left {
+  transform: translate(-65%, -65%);
+}
+
+.joystick-stick.up-right {
+  transform: translate(-35%, -65%);
+}
+
+.joystick-stick.down-left {
+  transform: translate(-65%, -35%);
+}
+
+.joystick-stick.down-right {
+  transform: translate(-35%, -35%);
+}
+
+/* D-Pad Component */
+.dpad {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.dpad-button {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #34495E;
+  border: 2px solid #2C3E50;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.dpad-button:active {
+  background: #2ECC71;
+  transform: scale(0.95);
+}
+
+.dpad-up {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 8px 8px 0 0;
+}
+
+.dpad-down {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0 0 8px 8px;
+}
+
+.dpad-left {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 8px 0 0 8px;
+}
+
+.dpad-right {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 0 8px 8px 0;
+}
+
+.dpad-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background: #2C3E50;
+  border-radius: 50%;
+}
+
+/* Action Buttons (PlayStation Style) */
+.action-buttons {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.action-button {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid #1A1A1A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.1s;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.action-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.button-cross {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #5E9BFF;
+  color: white;
+}
+
+.button-circle {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #FF5757;
+  color: white;
+}
+
+.button-square {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #FF9BFF;
+  color: white;
+}
+
+.button-triangle {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #9BFF9B;
+  color: white;
+}
+
+/* Trigger Buttons */
+.trigger-button {
+  position: relative;
+  width: 80px;
+  height: 40px;
+  background: linear-gradient(to bottom, #95A5A6 0%, #7F8C8D 100%);
+  border: 3px solid #2C3E50;
+  border-radius: 12px 12px 0 0;
+  cursor: pointer;
+  transition: all 0.1s;
+  box-shadow: 
+    inset 0 2px 4px rgba(255, 255, 255, 0.2),
+    0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.trigger-button:active {
+  transform: translateY(3px);
+  box-shadow: 
+    inset 0 2px 4px rgba(0, 0, 0, 0.3),
+    0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Vibration Effect */
+@keyframes vibrate {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-2px, -1px); }
+  20% { transform: translate(2px, 1px); }
+  30% { transform: translate(-1px, 2px); }
+  40% { transform: translate(1px, -2px); }
+  50% { transform: translate(-2px, 1px); }
+  60% { transform: translate(2px, -1px); }
+  70% { transform: translate(-1px, -2px); }
+  80% { transform: translate(1px, 2px); }
+  90% { transform: translate(-2px, -1px); }
+}
+
+.joystick-vibrating {
+  animation: vibrate 0.3s ease-in-out infinite;
+}

@@ -1,0 +1,89 @@
+/**
+ * 🏗️ Construction Theme - Typography System
+ * Blueprint and technical drawing fonts
+ */
+
+:root[data-theme="construction"] {
+  /* Font Families */
+  --font-primary: 'Architects Daughter', 'Permanent Marker', 'Comic Sans MS', cursive;
+  --font-secondary: 'Roboto Condensed', 'Arial Narrow', 'Arial', sans-serif;
+  --font-technical: 'Courier New', monospace;
+  --font-blueprint: 'Inconsolata', 'Courier New', monospace;
+  
+  /* Font Sizes */
+  --font-size-xs: 10px;
+  --font-size-sm: 12px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 26px;
+  --font-size-xxl: 36px;
+  
+  /* Line Heights */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.8;
+  
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.5px;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 1px;
+  --letter-spacing-wider: 3px;
+  
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
+
+/* Blueprint Text Style */
+.construction-blueprint {
+  font-family: var(--font-blueprint);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-normal);
+  color: var(--text-blueprint);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+/* Measurement Typography */
+.construction-measurement {
+  font-family: var(--font-technical);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-accent);
+}
+
+/* Warning Label Typography */
+.construction-warning {
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--caution-red);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wider);
+}
+
+/* Title Typography */
+.construction-title {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+}
+
+/* Annotation Typography */
+.construction-annotation {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+/* Dimension Typography */
+.construction-dimension {
+  font-family: var(--font-technical);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-blueprint);
+}

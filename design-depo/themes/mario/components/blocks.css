@@ -1,0 +1,148 @@
+/**
+ * 🍄 Mario Theme - Question Block Component
+ * Interactive mystery block with coin animation
+ */
+
+.mario-question-block {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  background: var(--question-block);
+  border: 4px solid var(--question-block-shadow);
+  box-shadow: 
+    inset -4px -4px 0 var(--question-block-shadow),
+    inset 4px 4px 0 var(--coin-shine);
+  image-rendering: pixelated;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.mario-question-block::before {
+  content: '?';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-primary);
+  font-size: 32px;
+  color: var(--text-shadow);
+  text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.5);
+}
+
+.mario-question-block:hover {
+  transform: translateY(-4px);
+}
+
+.mario-question-block:active {
+  animation: block-hit 0.3s;
+}
+
+@keyframes block-hit {
+  0%, 100% { transform: translateY(0); }
+  25% { transform: translateY(-16px); }
+  50% { transform: translateY(-8px); }
+  75% { transform: translateY(0); }
+}
+
+/* Brick Block Component */
+.mario-brick-block {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  background: var(--brick-block);
+  border: 4px solid var(--brick-block-shadow);
+  box-shadow: inset -4px -4px 0 var(--brick-block-shadow);
+  background-image: 
+    linear-gradient(90deg, transparent 30%, rgba(0,0,0,0.1) 30%, rgba(0,0,0,0.1) 32%, transparent 32%),
+    linear-gradient(0deg, transparent 48%, rgba(0,0,0,0.1) 48%, rgba(0,0,0,0.1) 52%, transparent 52%);
+  image-rendering: pixelated;
+}
+
+/* Coin Component */
+.mario-coin {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  background: var(--coin-gold);
+  border-radius: 50%;
+  border: 3px solid var(--coin-shine);
+  box-shadow: 
+    inset 2px 2px 4px rgba(255, 255, 255, 0.5),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.3),
+    0 4px 8px rgba(0, 0, 0, 0.3);
+  animation: coin-spin 2s linear infinite;
+}
+
+.mario-coin::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  background: var(--coin-shine);
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+@keyframes coin-spin {
+  0%, 100% { transform: rotateY(0deg); }
+  50% { transform: rotateY(180deg); }
+}
+
+/* Mushroom Component */
+.mario-mushroom {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  background: var(--mushroom-red);
+  border-radius: 50% 50% 0 0;
+  border: 3px solid var(--text-shadow);
+}
+
+.mario-mushroom::before {
+  content: '';
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 16px;
+  background: var(--mushroom-white);
+  border: 3px solid var(--text-shadow);
+  border-top: none;
+}
+
+.mario-mushroom::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 12px;
+  height: 12px;
+  background: var(--mushroom-white);
+  border-radius: 50%;
+}
+
+/* Power Star Component */
+.mario-star {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  background: var(--star-power);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  animation: star-twinkle 1s ease-in-out infinite;
+  box-shadow: 0 0 20px var(--star-power);
+}
+
+@keyframes star-twinkle {
+  0%, 100% { 
+    transform: scale(1) rotate(0deg);
+    filter: brightness(1);
+  }
+  50% { 
+    transform: scale(1.1) rotate(180deg);
+    filter: brightness(1.3);
+  }
+}

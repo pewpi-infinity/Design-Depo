@@ -1,0 +1,118 @@
+/**
+ * 👨‍🔧 Luigi Character Design Library
+ * Green plumber sprite sheets and animations
+ */
+
+.character-luigi {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  image-rendering: pixelated;
+}
+
+/* Luigi Standing Sprite */
+.luigi-standing {
+  background: linear-gradient(
+    to bottom,
+    #00AA44 0%, #00AA44 30%,    /* Green hat/shirt */
+    #0066CC 30%, #0066CC 50%,   /* Blue overalls */
+    #8B4513 50%, #8B4513 60%,   /* Brown shoes */
+    transparent 60%
+  );
+}
+
+/* Luigi Mustache (slightly different from Mario) */
+.luigi-mustache {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 7px;
+  background: #1A1A1A;
+  border-radius: 0 0 13px 13px;
+}
+
+/* Luigi Cap */
+.luigi-cap {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 48px;
+  height: 24px;
+  background: #00AA44;
+  border-radius: 50% 50% 0 0;
+}
+
+.luigi-cap::before {
+  content: 'L';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Press Start 2P', monospace;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Luigi Jumping Animation (higher jump than Mario) */
+@keyframes luigi-jump {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-50px) rotate(-5deg); }
+  50% { transform: translateY(-80px) rotate(0deg); }
+  75% { transform: translateY(-50px) rotate(5deg); }
+}
+
+.luigi-jumping {
+  animation: luigi-jump 1.2s ease-in-out;
+}
+
+/* Luigi Running Animation (slightly slower than Mario) */
+@keyframes luigi-run {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(3px) scaleX(0.95); }
+  75% { transform: translateX(-3px) scaleX(1.05); }
+}
+
+.luigi-running {
+  animation: luigi-run 0.45s steps(4) infinite;
+}
+
+/* Luigi Scared Animation */
+@keyframes luigi-scared {
+  0%, 100% { transform: scale(1) translateX(0); }
+  25% { transform: scale(0.95) translateX(-2px); }
+  50% { transform: scale(1.05) translateX(0); }
+  75% { transform: scale(0.95) translateX(2px); }
+}
+
+.luigi-scared {
+  animation: luigi-scared 0.3s ease-in-out infinite;
+}
+
+/* Power-up States */
+.luigi-fire-flower {
+  filter: hue-rotate(60deg) brightness(1.2);
+}
+
+.luigi-poltergust {
+  animation: vacuum-shake 0.2s ease-in-out infinite;
+}
+
+@keyframes vacuum-shake {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+
+/* Size Variants */
+.luigi-small {
+  width: 48px;
+  height: 48px;
+}
+
+.luigi-super {
+  width: 64px;
+  height: 100px; /* Slightly taller than Mario */
+}

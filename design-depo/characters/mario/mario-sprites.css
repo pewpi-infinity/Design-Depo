@@ -1,0 +1,122 @@
+/**
+ * 👨 Mario Character Design Library
+ * Sprite sheets and character components
+ */
+
+.character-mario {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  image-rendering: pixelated;
+}
+
+/* Mario Standing Sprite */
+.mario-standing {
+  background: linear-gradient(
+    to bottom,
+    #E60012 0%, #E60012 30%,    /* Red hat/shirt */
+    #0066CC 30%, #0066CC 50%,   /* Blue overalls */
+    #8B4513 50%, #8B4513 60%,   /* Brown shoes */
+    transparent 60%
+  );
+}
+
+/* Mario Mustache */
+.mario-mustache {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 8px;
+  background: #000000;
+  border-radius: 0 0 12px 12px;
+}
+
+/* Mario Cap */
+.mario-cap {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 48px;
+  height: 24px;
+  background: #E60012;
+  border-radius: 50% 50% 0 0;
+}
+
+.mario-cap::before {
+  content: 'M';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Press Start 2P', monospace;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Mario Jumping Animation */
+@keyframes mario-jump {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-40px) rotate(-5deg); }
+  50% { transform: translateY(-60px) rotate(0deg); }
+  75% { transform: translateY(-40px) rotate(5deg); }
+}
+
+.mario-jumping {
+  animation: mario-jump 1s ease-in-out;
+}
+
+/* Mario Running Animation */
+@keyframes mario-run {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(4px) scaleX(0.95); }
+  75% { transform: translateX(-4px) scaleX(1.05); }
+}
+
+.mario-running {
+  animation: mario-run 0.4s steps(4) infinite;
+}
+
+/* Power-up States */
+.mario-fire-flower {
+  filter: hue-rotate(30deg) brightness(1.2);
+  animation: power-pulse 0.5s ease-in-out infinite;
+}
+
+@keyframes power-pulse {
+  0%, 100% { filter: hue-rotate(30deg) brightness(1.2); }
+  50% { filter: hue-rotate(30deg) brightness(1.4); }
+}
+
+.mario-star-power {
+  animation: rainbow-cycle 0.3s linear infinite;
+}
+
+@keyframes rainbow-cycle {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+/* Size Variants */
+.mario-small {
+  width: 48px;
+  height: 48px;
+}
+
+.mario-super {
+  width: 64px;
+  height: 96px;
+}
+
+/* Damage Flash */
+.mario-damage {
+  animation: damage-flash 0.1s ease-in-out 3;
+}
+
+@keyframes damage-flash {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}

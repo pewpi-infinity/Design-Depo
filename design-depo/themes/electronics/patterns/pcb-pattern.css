@@ -1,0 +1,76 @@
+/**
+ * 🔌 Electronics Theme - Circuit Board Pattern
+ * PCB trace patterns and circuit layouts
+ */
+
+.electronics-pcb-pattern {
+  position: relative;
+  background: var(--pcb-green);
+  background-image: 
+    /* Vertical traces */
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 48px,
+      var(--solder-gold) 48px,
+      var(--solder-gold) 50px,
+      transparent 50px,
+      transparent 98px
+    ),
+    /* Horizontal traces */
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 48px,
+      var(--solder-gold) 48px,
+      var(--solder-gold) 50px,
+      transparent 50px,
+      transparent 98px
+    );
+  background-size: 100px 100px;
+}
+
+/* Solder Points */
+.electronics-solder-point {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: var(--solder-silver);
+  border-radius: 50%;
+  box-shadow: 
+    inset 0 0 3px rgba(255, 255, 255, 0.5),
+    0 0 5px rgba(192, 192, 192, 0.5);
+}
+
+/* Signal Trace Animation */
+@keyframes signal-flow {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100px 0;
+  }
+}
+
+.electronics-trace-animated {
+  background: linear-gradient(
+    90deg,
+    var(--solder-gold) 0%,
+    var(--signal-pulse) 25%,
+    var(--solder-gold) 50%,
+    var(--signal-pulse) 75%,
+    var(--solder-gold) 100%
+  );
+  background-size: 100px 100%;
+  animation: signal-flow 2s linear infinite;
+}
+
+/* Via Holes */
+.electronics-via {
+  width: 12px;
+  height: 12px;
+  background: var(--pcb-green);
+  border: 3px solid var(--solder-gold);
+  border-radius: 50%;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5);
+}
