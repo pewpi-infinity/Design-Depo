@@ -1,0 +1,56 @@
+/**
+ * 🤖 Robotics Theme - Color System
+ * Industrial automation and AI aesthetics
+ */
+
+:root[data-theme="robotics"] {
+  /* Robot Colors */
+  --robot-metal: #8B9DC3;
+  --robot-chrome: #E8E8E8;
+  --robot-dark: #34495E;
+  --robot-red: #E74C3C;
+  --robot-blue: #3498DB;
+  
+  /* Mechanical Colors */
+  --gear-bronze: #CD7F32;
+  --gear-steel: #B0C4DE;
+  --bolt-silver: #C0C0C0;
+  --rust-orange: #CC5500;
+  
+  /* Display Colors */
+  --display-cyan: #00FFFF;
+  --display-green: #00FF00;
+  --display-red: #FF0000;
+  --display-amber: #FFBF00;
+  
+  /* Factory Colors */
+  --factory-floor: #2C3E50;
+  --factory-yellow: #F39C12;
+  --factory-orange: #E67E22;
+  --safety-stripe: #FFD700;
+  
+  /* AI Visualization */
+  --ai-blue: #4A90E2;
+  --ai-purple: #9B59B6;
+  --ai-pink: #E91E63;
+  --neural-green: #2ECC71;
+  
+  /* Assembly Line */
+  --conveyor-gray: #7F8C8D;
+  --conveyor-black: #2C3E50;
+  --warning-yellow: #F1C40F;
+  --danger-red: #C0392B;
+  
+  /* Text & UI */
+  --text-primary: #ECF0F1;
+  --text-secondary: #BDC3C7;
+  --text-accent: #3498DB;
+  --bg-primary: #1A1A1A;
+  --bg-secondary: #2C3E50;
+  
+  /* States */
+  --state-active: #2ECC71;
+  --state-idle: #95A5A6;
+  --state-error: #E74C3C;
+  --state-warning: #F39C12;
+}

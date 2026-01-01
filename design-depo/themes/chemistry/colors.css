@@ -1,0 +1,55 @@
+/**
+ * 🧪 Chemistry Theme - Color System
+ * Laboratory and molecular chemistry aesthetics
+ */
+
+:root[data-theme="chemistry"] {
+  /* Lab Equipment Colors */
+  --beaker-glass: rgba(230, 240, 250, 0.8);
+  --beaker-outline: #4A90E2;
+  --flask-glass: rgba(220, 235, 245, 0.85);
+  --lab-white: #FFFFFF;
+  
+  /* Chemical Colors */
+  --solution-blue: #4A90E2;
+  --solution-red: #E74C3C;
+  --solution-green: #2ECC71;
+  --solution-yellow: #F1C40F;
+  --solution-purple: #9B59B6;
+  --solution-orange: #E67E22;
+  
+  /* Periodic Table Colors */
+  --element-metal: #B0C4DE;
+  --element-nonmetal: #90EE90;
+  --element-noble: #DDA0DD;
+  --element-alkali: #FFB6C1;
+  --element-halogen: #F0E68C;
+  --element-lanthanide: #FFE4E1;
+  
+  /* Molecule Colors */
+  --carbon-black: #2C3E50;
+  --hydrogen-white: #ECF0F1;
+  --oxygen-red: #E74C3C;
+  --nitrogen-blue: #3498DB;
+  --sulfur-yellow: #F1C40F;
+  --phosphorus-orange: #E67E22;
+  
+  /* Lab Surface Colors */
+  --lab-bench: #34495E;
+  --lab-tile: #ECF0F1;
+  --safety-yellow: #F39C12;
+  --warning-red: #C0392B;
+  
+  /* Text & UI */
+  --text-primary: #2C3E50;
+  --text-secondary: #7F8C8D;
+  --text-accent: #3498DB;
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #ECF0F1;
+  
+  /* Reaction States */
+  --reaction-neutral: #95A5A6;
+  --reaction-exothermic: #E74C3C;
+  --reaction-endothermic: #3498DB;
+  --reaction-complete: #2ECC71;
+}

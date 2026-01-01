@@ -1,0 +1,204 @@
+{
+  "design-system": {
+    "version": "1.0.0",
+    "name": "Design-Depo Multi-Theme System",
+    "description": "Comprehensive design library for all 11 themes with components, patterns, and assets",
+    "themes": {
+      "mario": {
+        "name": "Mario Theme",
+        "icon": "🍄",
+        "description": "Pixel-perfect 8-bit gaming aesthetics from the Mushroom Kingdom",
+        "colors": {
+          "primary": "#E60012",
+          "secondary": "#0066CC",
+          "accent": "#FFD700"
+        }
+      },
+      "electronics": {
+        "name": "Electronics Theme",
+        "icon": "🔌",
+        "description": "Circuit board and electronic component aesthetics",
+        "colors": {
+          "primary": "#006B3C",
+          "secondary": "#00FF00",
+          "accent": "#00FFFF"
+        }
+      },
+      "chemistry": {
+        "name": "Chemistry Theme",
+        "icon": "🧪",
+        "description": "Laboratory and molecular chemistry aesthetics",
+        "colors": {
+          "primary": "#4A90E2",
+          "secondary": "#2ECC71",
+          "accent": "#9B59B6"
+        }
+      },
+      "mathematics": {
+        "name": "Mathematics Theme",
+        "icon": "📐",
+        "description": "Chalkboard and academic mathematics aesthetics",
+        "colors": {
+          "primary": "#2C5F2D",
+          "secondary": "#FFFACD",
+          "accent": "#FFB6C1"
+        }
+      },
+      "robotics": {
+        "name": "Robotics Theme",
+        "icon": "🤖",
+        "description": "Industrial automation and AI aesthetics",
+        "colors": {
+          "primary": "#8B9DC3",
+          "secondary": "#00FFFF",
+          "accent": "#4A90E2"
+        }
+      },
+      "construction": {
+        "name": "Construction Theme",
+        "icon": "🏗️",
+        "description": "Blueprint and construction site aesthetics",
+        "colors": {
+          "primary": "#003D5B",
+          "secondary": "#FFD700",
+          "accent": "#E67E22"
+        }
+      },
+      "automotive": {
+        "name": "Automotive Theme",
+        "icon": "🚗",
+        "description": "Racing and vehicle design aesthetics",
+        "colors": {
+          "primary": "#C8102E",
+          "secondary": "#FFD700",
+          "accent": "#FF6600"
+        }
+      },
+      "gaming": {
+        "name": "Gaming Theme",
+        "icon": "🎮",
+        "description": "Video game UI and controller aesthetics",
+        "colors": {
+          "primary": "#2C3E50",
+          "secondary": "#00FF41",
+          "accent": "#3498DB"
+        }
+      },
+      "music": {
+        "name": "Music Theme",
+        "icon": "🎵",
+        "description": "Musical notation and audio aesthetics",
+        "colors": {
+          "primary": "#2C3E50",
+          "secondary": "#9B59B6",
+          "accent": "#E91E63"
+        }
+      },
+      "space": {
+        "name": "Space Theme",
+        "icon": "🚀",
+        "description": "Cosmic and astronomical aesthetics",
+        "colors": {
+          "primary": "#0B0B0F",
+          "secondary": "#00FFFF",
+          "accent": "#B3D9FF"
+        }
+      },
+      "nature": {
+        "name": "Nature Theme",
+        "icon": "🌿",
+        "description": "Organic and botanical aesthetics",
+        "colors": {
+          "primary": "#2D5016",
+          "secondary": "#8BC34A",
+          "accent": "#F48FB1"
+        }
+      }
+    },
+    "legend-colors": {
+      "green": {
+        "name": "GREEN Pattern",
+        "icon": "🟩",
+        "hex": "#00AA44",
+        "usage": "Success, growth, nature, go"
+      },
+      "orange": {
+        "name": "ORANGE Pattern",
+        "icon": "🟧",
+        "hex": "#FF8C00",
+        "usage": "Warning, construction, energy"
+      },
+      "blue": {
+        "name": "BLUE Pattern",
+        "icon": "🟦",
+        "hex": "#4A90E2",
+        "usage": "Information, technology, calm"
+      },
+      "red": {
+        "name": "RED Pattern",
+        "icon": "🟥",
+        "hex": "#E74C3C",
+        "usage": "Danger, error, stop, power"
+      },
+      "purple": {
+        "name": "PURPLE Pattern",
+        "icon": "🟪",
+        "hex": "#9B59B6",
+        "usage": "Creative, premium, mystery"
+      },
+      "yellow": {
+        "name": "YELLOW Pattern",
+        "icon": "🟨",
+        "hex": "#FFD700",
+        "usage": "Caution, coins, attention"
+      },
+      "pink": {
+        "name": "PINK Pattern",
+        "icon": "💗",
+        "hex": "#FF69B4",
+        "usage": "Playful, love, highlight"
+      }
+    },
+    "token-visual-system": {
+      "name": "Token Formula System",
+      "icon": "🧱Kris🔑",
+      "description": "Visual identity for token formulas and semantic connections",
+      "colors": {
+        "brick": "#CC6600",
+        "key": "#FFD700",
+        "connection": "#4A90E2"
+      },
+      "patterns": {
+        "formula-display": "Monospace technical font with semantic highlighting",
+        "semantic-connection": "Visual lines connecting related concepts",
+        "token-identity": "Unique visual signature per token type"
+      }
+    },
+    "spacing": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px",
+      "xxl": "48px"
+    },
+    "border-radius": {
+      "sm": "4px",
+      "md": "8px",
+      "lg": "16px",
+      "round": "50%"
+    },
+    "shadows": {
+      "sm": "0 2px 4px rgba(0, 0, 0, 0.1)",
+      "md": "0 4px 8px rgba(0, 0, 0, 0.15)",
+      "lg": "0 8px 16px rgba(0, 0, 0, 0.2)",
+      "xl": "0 16px 32px rgba(0, 0, 0, 0.25)"
+    },
+    "breakpoints": {
+      "mobile": "320px",
+      "tablet": "768px",
+      "desktop": "1024px",
+      "wide": "1440px"
+    }
+  }
+}

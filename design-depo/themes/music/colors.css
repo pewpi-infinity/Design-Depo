@@ -1,0 +1,52 @@
+/**
+ * 🎵 Music Theme - Color System
+ * Musical notation and audio aesthetics
+ */
+
+:root[data-theme="music"] {
+  /* Musical Staff Colors */
+  --staff-black: #000000;
+  --staff-background: #FFFEF7;
+  --note-black: #1A1A1A;
+  
+  /* Instrument Colors */
+  --piano-white: #FFFFFF;
+  --piano-black: #0A0A0A;
+  --wood-brown: #8B4513;
+  --brass-gold: #B8860B;
+  --string-silver: #C0C0C0;
+  
+  /* Audio Visualization Colors */
+  --waveform-blue: #3498DB;
+  --waveform-green: #2ECC71;
+  --waveform-purple: #9B59B6;
+  --waveform-pink: #E91E63;
+  --spectrum-red: #E74C3C;
+  --spectrum-orange: #E67E22;
+  --spectrum-yellow: #F1C40F;
+  
+  /* Genre Colors */
+  --rock-red: #C0392B;
+  --jazz-purple: #8E44AD;
+  --classical-gold: #D4AF37;
+  --electronic-cyan: #00BCD4;
+  
+  /* Volume/Level Colors */
+  --volume-low: #2ECC71;
+  --volume-mid: #F39C12;
+  --volume-high: #E74C3C;
+  --volume-peak: #FF0000;
+  
+  /* Text & UI */
+  --text-primary: #2C3E50;
+  --text-secondary: #7F8C8D;
+  --text-accent: #9B59B6;
+  --bg-primary: #FFFEF7;
+  --bg-secondary: #ECF0F1;
+  
+  /* Playback States */
+  --play-green: #27AE60;
+  --pause-orange: #F39C12;
+  --stop-red: #E74C3C;
+  --record-red: #C0392B;
+}

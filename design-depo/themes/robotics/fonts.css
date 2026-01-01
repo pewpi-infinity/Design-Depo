@@ -1,0 +1,86 @@
+/**
+ * 🤖 Robotics Theme - Typography System
+ * Industrial and technical robot fonts
+ */
+
+:root[data-theme="robotics"] {
+  /* Font Families */
+  --font-primary: 'Orbitron', 'Exo 2', sans-serif;
+  --font-secondary: 'Rajdhani', sans-serif;
+  --font-technical: 'Share Tech Mono', monospace;
+  --font-display: 'Audiowide', cursive;
+  
+  /* Font Sizes */
+  --font-size-xs: 10px;
+  --font-size-sm: 12px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 28px;
+  --font-size-xxl: 36px;
+  
+  /* Line Heights */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.8;
+  
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.5px;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 2px;
+  --letter-spacing-wider: 4px;
+  
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+}
+
+/* Robot Display Font */
+.robotics-display {
+  font-family: var(--font-display);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-wider);
+  text-transform: uppercase;
+  color: var(--display-cyan);
+  text-shadow: 0 0 10px currentColor;
+}
+
+/* Technical Label Font */
+.robotics-label {
+  font-family: var(--font-technical);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+  color: var(--text-secondary);
+}
+
+/* Status Text Font */
+.robotics-status {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  color: var(--state-active);
+}
+
+/* Code/Command Font */
+.robotics-code {
+  font-family: var(--font-technical);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+  color: var(--text-primary);
+  background: rgba(0, 0, 0, 0.3);
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+/* Robot ID Font */
+.robotics-id {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-black);
+  letter-spacing: var(--letter-spacing-wide);
+  color: var(--text-accent);
+}

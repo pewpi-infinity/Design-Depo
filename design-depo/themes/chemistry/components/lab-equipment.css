@@ -1,0 +1,215 @@
+/**
+ * 🧪 Chemistry Theme - Beaker and Lab Equipment Components
+ * Laboratory glassware and apparatus
+ */
+
+/* Beaker Component */
+.chemistry-beaker {
+  position: relative;
+  width: 100px;
+  height: 150px;
+  background: var(--beaker-glass);
+  border: 3px solid var(--beaker-outline);
+  border-radius: 0 0 10px 10px;
+  border-top: none;
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+}
+
+/* Beaker Rim */
+.chemistry-beaker::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -5px;
+  right: -5px;
+  height: 15px;
+  background: var(--beaker-outline);
+  border-radius: 8px 8px 0 0;
+}
+
+/* Solution Inside Beaker */
+.chemistry-beaker-solution {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: var(--solution-blue);
+  transition: height 1s ease-in-out;
+  animation: solution-bubble 3s ease-in-out infinite;
+}
+
+@keyframes solution-bubble {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
+}
+
+/* Measurement Lines */
+.chemistry-beaker-marks {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  height: 2px;
+  background: var(--beaker-outline);
+  opacity: 0.3;
+}
+
+/* Erlenmeyer Flask */
+.chemistry-flask {
+  position: relative;
+  width: 80px;
+  height: 120px;
+  background: var(--flask-glass);
+  clip-path: polygon(
+    30% 0,
+    70% 0,
+    70% 30%,
+    100% 100%,
+    0 100%,
+    30% 30%
+  );
+  border: 3px solid var(--beaker-outline);
+  backdrop-filter: blur(5px);
+}
+
+/* Test Tube */
+.chemistry-test-tube {
+  position: relative;
+  width: 30px;
+  height: 120px;
+  background: var(--flask-glass);
+  border: 2px solid var(--beaker-outline);
+  border-radius: 0 0 15px 15px;
+  border-top: none;
+  backdrop-filter: blur(5px);
+}
+
+.chemistry-test-tube::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -5px;
+  right: -5px;
+  height: 10px;
+  background: var(--beaker-outline);
+  border-radius: 5px 5px 0 0;
+}
+
+/* Molecule Component */
+.chemistry-molecule {
+  position: relative;
+  display: inline-block;
+}
+
+.chemistry-atom {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-formula);
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 
+    inset 2px 2px 4px rgba(255, 255, 255, 0.5),
+    2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chemistry-atom.carbon {
+  background: var(--carbon-black);
+  color: white;
+}
+
+.chemistry-atom.hydrogen {
+  background: var(--hydrogen-white);
+  color: black;
+}
+
+.chemistry-atom.oxygen {
+  background: var(--oxygen-red);
+  color: white;
+}
+
+.chemistry-atom.nitrogen {
+  background: var(--nitrogen-blue);
+  color: white;
+}
+
+/* Bond Lines */
+.chemistry-bond {
+  position: absolute;
+  height: 3px;
+  background: var(--text-secondary);
+  transform-origin: left center;
+}
+
+.chemistry-bond.double {
+  height: 6px;
+  background: linear-gradient(
+    to bottom,
+    var(--text-secondary) 0%,
+    var(--text-secondary) 40%,
+    transparent 40%,
+    transparent 60%,
+    var(--text-secondary) 60%,
+    var(--text-secondary) 100%
+  );
+}
+
+/* Periodic Table Element */
+.chemistry-periodic-element {
+  position: relative;
+  width: 60px;
+  height: 70px;
+  background: var(--element-metal);
+  border: 2px solid var(--text-secondary);
+  border-radius: 4px;
+  padding: 4px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.chemistry-periodic-element:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.chemistry-periodic-element .atomic-number {
+  font-size: 10px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.chemistry-periodic-element .symbol {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin: 4px 0;
+}
+
+.chemistry-periodic-element .name {
+  font-size: 9px;
+  color: var(--text-secondary);
+  text-transform: capitalize;
+}
+
+/* Reaction Animation */
+.chemistry-reaction {
+  animation: chemical-reaction 2s ease-in-out infinite;
+}
+
+@keyframes chemical-reaction {
+  0%, 100% { 
+    filter: brightness(1);
+    transform: scale(1);
+  }
+  50% { 
+    filter: brightness(1.2);
+    transform: scale(1.02);
+  }
+}

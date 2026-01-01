@@ -1,0 +1,63 @@
+/**
+ * 🔌 Electronics Theme - Color System
+ * Circuit board aesthetics and electronic component colors
+ */
+
+:root[data-theme="electronics"] {
+  /* PCB Colors */
+  --pcb-green: #006B3C;
+  --pcb-blue: #1A4D8F;
+  --pcb-black: #1C1C1C;
+  --solder-silver: #C0C0C0;
+  --solder-gold: #FFD700;
+  
+  /* Component Colors */
+  --resistor-beige: #D4AF8E;
+  --resistor-band-1: #8B4513;
+  --resistor-band-2: #FF0000;
+  --resistor-band-3: #FFD700;
+  --capacitor-blue: #4169E1;
+  --capacitor-ceramic: #F5DEB3;
+  
+  /* LED Colors */
+  --led-red: #FF0000;
+  --led-green: #00FF00;
+  --led-blue: #0000FF;
+  --led-yellow: #FFFF00;
+  --led-white: #FFFFFF;
+  --led-off: #2A2A2A;
+  
+  /* Signal Colors */
+  --signal-high: #00FF00;
+  --signal-low: #666666;
+  --signal-pulse: #00FFFF;
+  --signal-error: #FF0000;
+  
+  /* Oscilloscope Colors */
+  --scope-bg: #001100;
+  --scope-grid: #004400;
+  --scope-trace-1: #00FF00;
+  --scope-trace-2: #FFFF00;
+  --scope-trace-3: #FF00FF;
+  
+  /* Wire Colors */
+  --wire-red: #FF0000;
+  --wire-black: #000000;
+  --wire-blue: #0000FF;
+  --wire-green: #00AA00;
+  --wire-yellow: #FFFF00;
+  --wire-white: #FFFFFF;
+  
+  /* Text & UI */
+  --text-primary: #00FF00;
+  --text-secondary: #CCCCCC;
+  --text-accent: #00FFFF;
+  --bg-primary: var(--pcb-black);
+  --bg-secondary: var(--pcb-green);
+  
+  /* States */
+  --state-on: #00FF00;
+  --state-off: #333333;
+  --state-error: #FF0000;
+  --state-warning: #FFD700;
+}

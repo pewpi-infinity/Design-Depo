@@ -1,0 +1,49 @@
+/**
+ * 🏗️ Construction Theme - Color System
+ * Blueprint and construction site aesthetics
+ */
+
+:root[data-theme="construction"] {
+  /* Blueprint Colors */
+  --blueprint-blue: #003D5B;
+  --blueprint-line: #FFFFFF;
+  --blueprint-grid: rgba(255, 255, 255, 0.2);
+  --blueprint-highlight: #00D9FF;
+  
+  /* Construction Materials */
+  --concrete-gray: #95A5A6;
+  --steel-silver: #BDC3C7;
+  --wood-brown: #8B4513;
+  --brick-red: #B7410E;
+  
+  /* Safety Colors */
+  --safety-yellow: #FFD700;
+  --safety-orange: #FF8C00;
+  --caution-red: #DC143C;
+  --reflective-lime: #CCFF00;
+  
+  /* Tool Colors */
+  --tool-metal: #708090;
+  --tool-handle: #FF6347;
+  --tool-rubber: #2F4F4F;
+  
+  /* Site Colors */
+  --dirt-brown: #8B7355;
+  --gravel-gray: #A9A9A9;
+  --grass-green: #228B22;
+  --sky-blue: #87CEEB;
+  
+  /* Text & UI */
+  --text-primary: #2C3E50;
+  --text-secondary: #7F8C8D;
+  --text-accent: #E67E22;
+  --text-blueprint: var(--blueprint-line);
+  --bg-primary: #ECF0F1;
+  --bg-blueprint: var(--blueprint-blue);
+  
+  /* States */
+  --status-complete: #27AE60;
+  --status-progress: #F39C12;
+  --status-pending: #95A5A6;
+  --status-danger: #E74C3C;
+}

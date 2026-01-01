@@ -1,0 +1,91 @@
+/**
+ * 🔌 Electronics Theme - Typography System
+ * Monospace technical fonts for schematics and displays
+ */
+
+:root[data-theme="electronics"] {
+  /* Font Families */
+  --font-primary: 'IBM Plex Mono', 'Courier New', monospace;
+  --font-secondary: 'Roboto Mono', monospace;
+  --font-technical: 'Share Tech Mono', monospace;
+  --font-display: 'Orbitron', sans-serif;
+  
+  /* Font Sizes */
+  --font-size-xs: 10px;
+  --font-size-sm: 12px;
+  --font-size-md: 14px;
+  --font-size-lg: 18px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 32px;
+  
+  /* Line Heights */
+  --line-height-tight: 1.3;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.8;
+  
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.5px;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 1px;
+  --letter-spacing-wider: 2px;
+  
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
+
+/* Technical Display Font */
+.electronics-display {
+  font-family: var(--font-display);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-wider);
+  color: var(--text-primary);
+  text-shadow: 0 0 10px currentColor;
+}
+
+/* Schematic Label Font */
+.electronics-label {
+  font-family: var(--font-technical);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-normal);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+/* Component Value Font */
+.electronics-value {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-accent);
+}
+
+/* Monospace Code Font */
+.electronics-code {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+  color: var(--text-secondary);
+}
+
+/* LED Display Font */
+.electronics-led-text {
+  font-family: var(--font-display);
+  font-weight: var(--font-weight-bold);
+  color: var(--led-red);
+  text-shadow: 
+    0 0 5px currentColor,
+    0 0 10px currentColor,
+    0 0 15px currentColor;
+  letter-spacing: var(--letter-spacing-wider);
+}
+
+/* Oscilloscope Text */
+.electronics-scope-text {
+  font-family: var(--font-technical);
+  font-size: var(--font-size-xs);
+  color: var(--scope-trace-1);
+  text-shadow: 0 0 5px currentColor;
+}

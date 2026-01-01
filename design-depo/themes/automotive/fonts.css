@@ -1,0 +1,76 @@
+/**
+ * 🚗 Automotive Theme - Typography System
+ * Racing and speedometer fonts
+ */
+
+:root[data-theme="automotive"] {
+  /* Font Families */
+  --font-primary: 'Teko', 'Rajdhani', sans-serif;
+  --font-secondary: 'Russo One', sans-serif;
+  --font-technical: 'Saira Condensed', sans-serif;
+  --font-speedometer: 'Digital-7', 'Orbitron', monospace;
+  
+  /* Font Sizes */
+  --font-size-xs: 11px;
+  --font-size-sm: 14px;
+  --font-size-md: 18px;
+  --font-size-lg: 24px;
+  --font-size-xl: 36px;
+  --font-size-xxl: 48px;
+  
+  /* Line Heights */
+  --line-height-tight: 1.1;
+  --line-height-normal: 1.4;
+  --line-height-relaxed: 1.6;
+  
+  /* Letter Spacing */
+  --letter-spacing-tight: -1px;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 2px;
+  --letter-spacing-wider: 4px;
+  
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+}
+
+/* Speedometer Display */
+.automotive-speed {
+  font-family: var(--font-speedometer);
+  font-size: var(--font-size-xxl);
+  font-weight: var(--font-weight-bold);
+  color: var(--dash-red);
+  text-shadow: 0 0 15px currentColor;
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+/* Racing Number */
+.automotive-racing-number {
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-black);
+  color: var(--text-primary);
+  -webkit-text-stroke: 2px var(--text-accent);
+}
+
+/* Dashboard Label */
+.automotive-label {
+  font-family: var(--font-technical);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+  color: var(--text-secondary);
+}
+
+/* License Plate */
+.automotive-plate {
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-wider);
+  color: var(--text-primary);
+}

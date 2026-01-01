@@ -1,0 +1,53 @@
+/**
+ * 📐 Mathematics Theme - Color System
+ * Chalkboard and academic mathematics aesthetics
+ */
+
+:root[data-theme="mathematics"] {
+  /* Chalkboard Colors */
+  --chalkboard-green: #2C5F2D;
+  --chalkboard-black: #1A1A1A;
+  --chalk-white: #F5F5F5;
+  --chalk-yellow: #FFFACD;
+  --chalk-red: #FFB6C1;
+  --chalk-blue: #ADD8E6;
+  
+  /* Graph Paper Colors */
+  --paper-white: #FFFFFF;
+  --grid-light: #E0E0E0;
+  --grid-dark: #CCCCCC;
+  --axis-black: #000000;
+  
+  /* Geometric Shape Colors */
+  --shape-blue: #4169E1;
+  --shape-red: #DC143C;
+  --shape-green: #32CD32;
+  --shape-yellow: #FFD700;
+  --shape-purple: #9370DB;
+  --shape-orange: #FF8C00;
+  
+  /* Number Colors */
+  --number-primary: #2C3E50;
+  --number-variable: #E74C3C;
+  --number-constant: #3498DB;
+  --number-operator: #95A5A6;
+  
+  /* Fractal Colors */
+  --fractal-1: #667EEA;
+  --fractal-2: #764BA2;
+  --fractal-3: #F093FB;
+  --fractal-4: #4FACFE;
+  
+  /* Text & UI */
+  --text-primary: var(--chalk-white);
+  --text-secondary: var(--chalk-yellow);
+  --text-accent: var(--chalk-red);
+  --bg-primary: var(--chalkboard-green);
+  --bg-secondary: var(--paper-white);
+  
+  /* States */
+  --correct: #2ECC71;
+  --incorrect: #E74C3C;
+  --highlight: #F1C40F;
+  --faded: rgba(255, 255, 255, 0.3);
+}
