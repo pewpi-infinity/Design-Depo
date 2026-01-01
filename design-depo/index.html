@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎨 Design-Depo Showcase</title>
+  <link rel="stylesheet" href="design-depo-all.css">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    .header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      margin-bottom: 40px;
+      border-radius: 16px;
+    }
+    .header h1 {
+      margin: 0 0 10px 0;
+      font-size: 48px;
+    }
+    .header p {
+      margin: 0;
+      font-size: 20px;
+      opacity: 0.9;
+    }
+    .theme-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+    .theme-card {
+      background: white;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .theme-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+    .theme-icon {
+      font-size: 48px;
+      margin-bottom: 12px;
+    }
+    .theme-name {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0 0 8px 0;
+    }
+    .theme-description {
+      color: #666;
+      margin: 0 0 16px 0;
+      line-height: 1.6;
+    }
+    .demo-area {
+      margin-top: 16px;
+      padding: 16px;
+      border-radius: 8px;
+      min-height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+    .character-showcase {
+      background: white;
+      border-radius: 12px;
+      padding: 32px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
+    }
+    .character-showcase h2 {
+      text-align: center;
+      margin-bottom: 32px;
+      font-size: 32px;
+    }
+    .character-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 32px;
+    }
+    .character-item {
+      text-align: center;
+    }
+    .character-item h3 {
+      margin: 16px 0 8px 0;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="header">
+    <h1>🎨 Design-Depo</h1>
+    <p>Comprehensive Multi-Theme Design System</p>
+    <p style="font-size: 16px; margin-top: 10px;">11 Themes • 5 Character Libraries • 35+ Animations</p>
+  </div>
+
+  <div class="theme-grid">
+    
+    <!-- Mario Theme -->
+    <div class="theme-card" data-theme="mario">
+      <div class="theme-icon">🍄</div>
+      <h2 class="theme-name">Mario Theme</h2>
+      <p class="theme-description">Pixel-perfect 8-bit gaming aesthetics from the Mushroom Kingdom</p>
+      <div class="demo-area" style="background: #5C94FC;">
+        <div class="mario-question-block animate-bounce"></div>
+        <div class="mario-coin"></div>
+      </div>
+    </div>
+
+    <!-- Electronics Theme -->
+    <div class="theme-card" data-theme="electronics">
+      <div class="theme-icon">🔌</div>
+      <h2 class="theme-name">Electronics Theme</h2>
+      <p class="theme-description">Circuit board aesthetics and electronic components</p>
+      <div class="demo-area" style="background: #001100;">
+        <div class="electronics-led on green"></div>
+        <div class="electronics-led on blink" style="--led-red: #FFFF00;"></div>
+        <div class="electronics-led on" style="--led-red: #FF0000;"></div>
+      </div>
+    </div>
+
+    <!-- Chemistry Theme -->
+    <div class="theme-card" data-theme="chemistry">
+      <div class="theme-icon">🧪</div>
+      <h2 class="theme-name">Chemistry Theme</h2>
+      <p class="theme-description">Laboratory and molecular chemistry aesthetics</p>
+      <div class="demo-area" style="background: #ECF0F1;">
+        <div class="chemistry-beaker">
+          <div class="chemistry-beaker-solution"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mathematics Theme -->
+    <div class="theme-card" data-theme="mathematics">
+      <div class="theme-icon">📐</div>
+      <h2 class="theme-name">Mathematics Theme</h2>
+      <p class="theme-description">Chalkboard and academic mathematics aesthetics</p>
+      <div class="demo-area math-graph-paper" style="height: 120px;">
+      </div>
+    </div>
+
+    <!-- Robotics Theme -->
+    <div class="theme-card" data-theme="robotics">
+      <div class="theme-icon">🤖</div>
+      <h2 class="theme-name">Robotics Theme</h2>
+      <p class="theme-description">Industrial automation and AI aesthetics</p>
+      <div class="demo-area" style="background: #1A1A1A;">
+        <div class="robotics-robot-head"></div>
+      </div>
+    </div>
+
+    <!-- Construction Theme -->
+    <div class="theme-card" data-theme="construction">
+      <div class="theme-icon">🏗️</div>
+      <h2 class="theme-name">Construction Theme</h2>
+      <p class="theme-description">Blueprint and construction site aesthetics</p>
+      <div class="demo-area construction-blueprint" style="height: 120px;">
+      </div>
+    </div>
+
+    <!-- Automotive Theme -->
+    <div class="theme-card" data-theme="automotive">
+      <div class="theme-icon">🚗</div>
+      <h2 class="theme-name">Automotive Theme</h2>
+      <p class="theme-description">Racing and vehicle design aesthetics</p>
+      <div class="demo-area" style="background: #1A1A1A;">
+        <div class="vehicle-car">
+          <div class="car-body"></div>
+          <div class="car-roof"></div>
+          <div class="car-wheel car-wheel-front"></div>
+          <div class="car-wheel car-wheel-back"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gaming Theme -->
+    <div class="theme-card" data-theme="gaming">
+      <div class="theme-icon">🎮</div>
+      <h2 class="theme-name">Gaming Theme</h2>
+      <p class="theme-description">Video game UI and controller aesthetics</p>
+      <div class="demo-area" style="background: #2C3E50;">
+        <div class="joystick">
+          <div class="joystick-base"></div>
+          <div class="joystick-stick"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Music Theme -->
+    <div class="theme-card" data-theme="music">
+      <div class="theme-icon">🎵</div>
+      <h2 class="theme-name">Music Theme</h2>
+      <p class="theme-description">Musical notation and audio aesthetics</p>
+      <div class="demo-area" style="background: #FFFEF7; color: #2C3E50;">
+        <span style="font-size: 48px;">♪ ♫ ♬</span>
+      </div>
+    </div>
+
+    <!-- Space Theme -->
+    <div class="theme-card" data-theme="space">
+      <div class="theme-icon">🚀</div>
+      <h2 class="theme-name">Space Theme</h2>
+      <p class="theme-description">Cosmic and astronomical aesthetics</p>
+      <div class="demo-area" style="background: #0B0B0F; color: #FFFFFF;">
+        <span style="font-size: 24px;">✨ 🌟 ⭐</span>
+      </div>
+    </div>
+
+    <!-- Nature Theme -->
+    <div class="theme-card" data-theme="nature">
+      <div class="theme-icon">🌿</div>
+      <h2 class="theme-name">Nature Theme</h2>
+      <p class="theme-description">Organic and botanical aesthetics</p>
+      <div class="demo-area" style="background: #F1F8E9; color: #33691E;">
+        <span style="font-size: 48px;">🌱 🌸 🍃</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="character-showcase">
+    <h2>🎭 Character Design Library</h2>
+    <div class="character-grid">
+      
+      <div class="character-item">
+        <div class="character-mario mario-standing animate-float">
+          <div class="mario-cap"></div>
+          <div class="mario-mustache"></div>
+        </div>
+        <h3>👨 Mario</h3>
+        <p>Iconic plumber with jump animations</p>
+      </div>
+
+      <div class="character-item">
+        <div class="character-luigi luigi-standing animate-float">
+          <div class="luigi-cap"></div>
+          <div class="luigi-mustache"></div>
+        </div>
+        <h3>👨‍🔧 Luigi</h3>
+        <p>Green hero with higher jumps</p>
+      </div>
+
+      <div class="character-item">
+        <div class="mushroom-super animate-bounce">
+          <div class="mushroom-cap">
+            <div class="mushroom-spots mushroom-spot-1"></div>
+            <div class="mushroom-spots mushroom-spot-2"></div>
+            <div class="mushroom-spots mushroom-spot-3"></div>
+          </div>
+          <div class="mushroom-stem"></div>
+        </div>
+        <h3>🍄 Mushrooms</h3>
+        <p>Power-up collectibles</p>
+      </div>
+
+      <div class="character-item">
+        <div class="vehicle-car car-red">
+          <div class="car-body"></div>
+          <div class="car-roof"></div>
+          <div class="car-wheel car-wheel-front"></div>
+          <div class="car-wheel car-wheel-back"></div>
+          <div class="car-headlight"></div>
+        </div>
+        <h3>🚗 Cars</h3>
+        <p>Racing vehicles with animations</p>
+      </div>
+
+      <div class="character-item">
+        <div class="joystick">
+          <div class="joystick-base"></div>
+          <div class="joystick-stick"></div>
+        </div>
+        <h3>🕹️ Joystick</h3>
+        <p>Game controller UI elements</p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p><strong>🎨 Design-Depo</strong> - Comprehensive Multi-Theme Design System</p>
+    <p>11 Themes • 5 Character Libraries • 35+ Animations • Fully Customizable</p>
+    <p style="margin-top: 16px;">✅ ADDITIVE ONLY • ✅ All themes supported • ✅ Comprehensive design system</p>
+  </footer>
+
+</body>
+</html>

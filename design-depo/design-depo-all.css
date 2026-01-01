@@ -1,0 +1,85 @@
+/**
+ * 🎨 Design-Depo Master Import
+ * Import this file to load all theme CSS at once
+ * 
+ * Usage:
+ * <link rel="stylesheet" href="design-depo/design-depo-all.css">
+ */
+
+/* === SHARED RESOURCES === */
+@import url('animations/core-animations.css');
+
+/* === MARIO THEME === */
+@import url('themes/mario/colors.css');
+@import url('themes/mario/fonts.css');
+@import url('themes/mario/components/blocks.css');
+@import url('themes/mario/components/pipes.css');
+
+/* === ELECTRONICS THEME === */
+@import url('themes/electronics/colors.css');
+@import url('themes/electronics/fonts.css');
+@import url('themes/electronics/components/circuits.css');
+@import url('themes/electronics/components/oscilloscope.css');
+@import url('themes/electronics/patterns/pcb-pattern.css');
+
+/* === CHEMISTRY THEME === */
+@import url('themes/chemistry/colors.css');
+@import url('themes/chemistry/fonts.css');
+@import url('themes/chemistry/components/lab-equipment.css');
+
+/* === MATHEMATICS THEME === */
+@import url('themes/mathematics/colors.css');
+@import url('themes/mathematics/fonts.css');
+@import url('themes/mathematics/patterns/graph-paper.css');
+
+/* === ROBOTICS THEME === */
+@import url('themes/robotics/colors.css');
+@import url('themes/robotics/fonts.css');
+@import url('themes/robotics/components/gears.css');
+
+/* === CONSTRUCTION THEME === */
+@import url('themes/construction/colors.css');
+@import url('themes/construction/fonts.css');
+@import url('themes/construction/patterns/blueprint-grid.css');
+
+/* === AUTOMOTIVE THEME === */
+@import url('themes/automotive/colors.css');
+@import url('themes/automotive/fonts.css');
+
+/* === GAMING THEME === */
+@import url('themes/gaming/colors.css');
+@import url('themes/gaming/fonts.css');
+
+/* === MUSIC THEME === */
+@import url('themes/music/colors.css');
+@import url('themes/music/fonts.css');
+
+/* === SPACE THEME === */
+@import url('themes/space/colors.css');
+@import url('themes/space/fonts.css');
+
+/* === NATURE THEME === */
+@import url('themes/nature/colors.css');
+@import url('themes/nature/fonts.css');
+
+/* === CHARACTER LIBRARIES === */
+@import url('characters/mario/mario-sprites.css');
+@import url('characters/luigi/luigi-sprites.css');
+@import url('characters/cars/car-sprites.css');
+@import url('characters/mushrooms/mushroom-sprites.css');
+@import url('characters/joysticks/joystick-ui.css');
+
+/* === GLOBAL STYLES === */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

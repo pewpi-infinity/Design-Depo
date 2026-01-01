@@ -1,0 +1,142 @@
+/**
+ * 🤖 Robotics Theme - Gear Component
+ * Mechanical gears with rotation animations
+ */
+
+.robotics-gear {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.gear-body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--gear-steel);
+  border-radius: 50%;
+  box-shadow: 
+    inset 0 4px 8px rgba(0, 0, 0, 0.3),
+    0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.gear-body::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 30%;
+  background: var(--robot-dark);
+  border-radius: 50%;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Gear Teeth */
+.gear-tooth {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 20px;
+  background: var(--gear-steel);
+  transform-origin: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Generate 12 teeth */
+.gear-tooth:nth-child(1) { transform: translate(-50%, -50%) rotate(0deg) translateY(-40px); }
+.gear-tooth:nth-child(2) { transform: translate(-50%, -50%) rotate(30deg) translateY(-40px); }
+.gear-tooth:nth-child(3) { transform: translate(-50%, -50%) rotate(60deg) translateY(-40px); }
+.gear-tooth:nth-child(4) { transform: translate(-50%, -50%) rotate(90deg) translateY(-40px); }
+.gear-tooth:nth-child(5) { transform: translate(-50%, -50%) rotate(120deg) translateY(-40px); }
+.gear-tooth:nth-child(6) { transform: translate(-50%, -50%) rotate(150deg) translateY(-40px); }
+.gear-tooth:nth-child(7) { transform: translate(-50%, -50%) rotate(180deg) translateY(-40px); }
+.gear-tooth:nth-child(8) { transform: translate(-50%, -50%) rotate(210deg) translateY(-40px); }
+.gear-tooth:nth-child(9) { transform: translate(-50%, -50%) rotate(240deg) translateY(-40px); }
+.gear-tooth:nth-child(10) { transform: translate(-50%, -50%) rotate(270deg) translateY(-40px); }
+.gear-tooth:nth-child(11) { transform: translate(-50%, -50%) rotate(300deg) translateY(-40px); }
+.gear-tooth:nth-child(12) { transform: translate(-50%, -50%) rotate(330deg) translateY(-40px); }
+
+/* Gear Rotation Animation */
+@keyframes gear-rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.gear-spinning {
+  animation: gear-rotate 4s linear infinite;
+}
+
+.gear-spinning-reverse {
+  animation: gear-rotate 4s linear infinite reverse;
+}
+
+/* Robot Head Component */
+.robotics-robot-head {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background: var(--robot-metal);
+  border: 4px solid var(--robot-dark);
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.robot-antenna {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 20px;
+  background: var(--robot-dark);
+}
+
+.robot-antenna::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background: var(--robot-red);
+  border-radius: 50%;
+  animation: antenna-blink 1s ease-in-out infinite;
+}
+
+@keyframes antenna-blink {
+  0%, 49%, 100% { opacity: 1; box-shadow: 0 0 10px var(--robot-red); }
+  50%, 99% { opacity: 0.3; box-shadow: none; }
+}
+
+.robot-eye {
+  position: absolute;
+  top: 30%;
+  width: 20px;
+  height: 20px;
+  background: var(--display-cyan);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--display-cyan);
+}
+
+.robot-eye-left {
+  left: 15px;
+}
+
+.robot-eye-right {
+  right: 15px;
+}
+
+.robot-mouth {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 8px;
+  background: var(--robot-dark);
+  border-radius: 4px;
+}
